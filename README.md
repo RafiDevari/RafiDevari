@@ -1,4 +1,4 @@
-Hi 👋 My name is Muhamad Rafi Devari Hasibuan
+Muhamad Rafi Devari Hasibuan
 =============================================
 
 Web Developer and Back-End Developer
