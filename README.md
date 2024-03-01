@@ -4,7 +4,7 @@ Muhamad Rafi Devari Hasibuan
 Web Developer and Back-End Developer
 ------------------------------------
 
-I've been learning
+I've been learning software development for 2 years, with a deep passion for Back-End Development. Additionally, I've been studying Machine Learning for the past 4 months and find it fun.
 
 * 🌍  I'm based in Medan
 * ✉️  You can contact me at [rafidevari2004@gmail.com](mailto:rafidevari2004@gmail.com)
