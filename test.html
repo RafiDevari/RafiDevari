@@ -8,8 +8,6 @@
     <style>
   body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
   }
   nav {
     background-color: rgb(203, 211, 221);
@@ -33,6 +31,17 @@
 </style>
 
 <style>
+  @keyframes test{
+    0% {
+      transform: scale(0.994) ;
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.994);
+    }
+  }
   
   html, body {
     height: 100%;
@@ -44,23 +53,41 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    margin-right: 0%;
+    width: 100%;
+    /* background-color: aquamarine; */
   }
   .content {
-    width: 60%;
-    padding: 20px;
     padding: 20px;
     margin-top: 10%; 
+    /* background-color: aqua; */
   }
   .image {
-    width: 35%;
-    height: 100%;
-    overflow: hidden;
+    flex: 3;
+    width: auto;
+    overflow:visible;
+    display: flex;
+    /* background-color: bisque; */
   }
   .image img {
-    width: 100%;
+    width: auto;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover ;
+    position: relative;
   }
+  .nama {
+    margin: 0;
+    color: darkblue;
+    animation-name: test;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @media  (max-width: 720px) {
+  .nama {
+    color: red; 
+  }
+}
 </style>
       
 </head>
@@ -78,11 +105,10 @@
       
   <div class="container">
     <div class="content">
-      <h1>Hello there 😏, I'm <b style="color: darkblue;">Rafi Devari</b></h1>
-      <h1>Welcome</h1>&nbsp;&nbsp;
+      <h1>Hello there 🙏, I'm <div class="nama">Rafi Devari</b></h1>&nbsp;&nbsp;
       <h5>"I've been learning software development for 2 years, with a deep passion for Back-End Development. Additionally, I've been studying Machine Learning for the past 4 months and find it fun.
       </h5>
-      <button>Hello</button>
+      <button>Contact Me</button> 
     </div>
     <div class="image">
       <img src="WhatsApp_Image_2024-02-29_at_20.03.49_cab00709-removebg-preview (1).png" alt="Image">
