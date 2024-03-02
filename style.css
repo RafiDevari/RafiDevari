@@ -65,7 +65,7 @@ body {
   }
   .buton {
     animation-name: buton;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
   }
   .project {
     animation-name: project;
@@ -85,7 +85,20 @@ body {
     width: 20%;
     height: auto;
   }
-  
+
+  /* profile */
+  /* ---------------------------------------- */
+
+  .contentpro {
+    margin-top: 5%;
+    width: 60%;
+  }
+  .profileimages{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    width: 20%;
+  }
 
   @media  (max-width: 480px) {
   
@@ -98,5 +111,11 @@ body {
   .contable img{
     width: 50%;
     height: auto;
+  }
+  .profileimages{
+    width: 100%;
+    height: auto;
+    border-radius: 100%;
+    width: 70%;
   }
 }

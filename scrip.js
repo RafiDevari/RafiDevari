@@ -1,17 +1,15 @@
 function project() {
     var x = document.getElementById("loli2");
     var y = document.getElementById("loli1");
-    x.style.display = "ada";
+    x.style.display = "";
     y.style.display="none";
     x.classList.add("project");
-
-
 }
 
 function skill() {
     var x = document.getElementById("loli1");
     var y = document.getElementById("loli2");
-    x.style.display = "ada";
+    x.style.display = "";
     y.style.display="none";
     x.classList.add("project");
 }
@@ -35,11 +33,11 @@ function home(){
     z.style.display="none";
 }
 
-function contact(){
+function profile(){
     var x = document.getElementById("contact");
     var y = document.getElementById("home");
     var z = document.getElementById("profile");
-    x.style.display = "block";
+    x.style.display = "none";
     y.style.display="none";
-    z.style.display="none";
+    z.style.display="";
 }
