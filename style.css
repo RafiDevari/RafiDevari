@@ -34,7 +34,6 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
-    margin-right: 0%;
     width: 100%;
     animation-name: text;
     animation-duration: 1s;
