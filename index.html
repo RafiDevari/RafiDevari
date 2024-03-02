@@ -12,9 +12,9 @@
     
   <nav>
     <ul>
-      <li style="padding: 1%;"><a href="#"><b style="color: darkblue;font-size:large;">Home</b></a></li>
-      <li style="padding: 1%;"><a href="#"><b style="color: darkblue;font-size:large;">Profile</b></a></li>
-      <li style="padding: 1%;"><a href="#"><b style="color: darkblue;font-size: large;">Contact</b></a></li>
+      <li style="padding: 1%;"><button class="btn" onclick="home()"><b style="color: darkblue;font-size:large;">Home</b></button></li>
+      <li style="padding: 1%;"><button class="btn" onclick="profile()"><b style="color: darkblue;font-size:large;">Profile</b></button></li>
+      <li style="padding: 1%;"><button class="btn" onclick="contact()"><b style="color: darkblue;font-size: large;">Contact</b></button></li>
     </ul>
   </nav>
 
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div style="display: none;" id="contact" class="content">
+    <div style="display: none;"  class="content">
       
 
 
@@ -76,20 +76,27 @@
   </div>
 
 
-  
+  <!-- Contact -->
   <!-- -------------------------------------------------------------------------     -->
       
   <div style="display: none;" id="contact" class="container">
-    <div style="border: 1px solid red;width: 100%;" class="content">
+    <div style="width: 100%;" class="content">
+      <h1 style="text-align: center;"><div class="nama"><b>Contact</b></div></h1>&nbsp;&nbsp;
       
-      <table style="width: 100%;height: 100%;border: 1px solid green;" border="1">
-        <tr>
-          <td style="display: flex; justify-content: start; align-content: start;">
-            <p >Hai</p>
-          </td>
-          <td style="display: flex; justify-content: flex-end; align-content: flex-end;">Worl</td>
-        </tr>
-      </table>
+        <table class="contable"> 
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" alt=""></td>
+            <td><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" alt=""></td>
+            <td><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" alt=""></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.github.com/RafiDevari">RafiDevari</a></td>
+            <td><a href="http://www.instagram.com/rafi_dvri">rafi_dvri</a></td>
+            <td><a href="https://www.linkedin.com/in/muhamad-rafi-devari-hasibuan-3a36a8266">muhamad rafi devari hasibuan</a></td>
+          </tr>
+        </table>
+
+        
       
     </div>
   </div>

@@ -71,6 +71,21 @@ body {
     animation-name: project;
     animation-duration: 2s;
   }
+  /* contact */
+  /* ---------------------------------------- */
+  .contable{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    animation-name: contact;
+    animation-duration: 1s;
+  }
+
+  .contable img{
+    width: 20%;
+    height: auto;
+  }
+  
 
   @media  (max-width: 480px) {
   
@@ -79,5 +94,9 @@ body {
   }
   .container img{
     max-width: 100%;
+  }
+  .contable img{
+    width: 50%;
+    height: auto;
   }
 }
