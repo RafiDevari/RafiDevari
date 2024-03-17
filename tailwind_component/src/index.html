@@ -95,42 +95,7 @@
 
     
     <!-- Hidden Menu Content (Shown on Mobile) -->
-<div id="mobileMenu" class=" bg-gray-800 text-white py-2 hidden">
-    <div class="px-6">
-        <div class="mr-4">
-            <button class="text-white hover:text-gray-300 focus:outline-none">
-                <p class="font-bold">Kampus Mengajar</p>
-                <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="mr-4">
-            <button class="text-white hover:text-gray-300 focus:outline-none">
-                <p class="font-bold">Magang MSIB</p>
-                <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="mr-4">
-            <button class="text-white hover:text-gray-300 focus:outline-none">
-                <p class="font-bold">Studi Independen Bersertifikat</p>
-                <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                </svg>
-            </button>
-        </div>
-        <div class="mr-4">
-            <button class="text-white hover:text-gray-300 focus:outline-none">
-                <p class="font-bold">Pertukaran Mahasiswa Merdeka</p>
-                <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
-</div>
+
 
 
     
@@ -140,11 +105,12 @@
 
     
         <div>
-            <div class="bg-[url('https://kampusmerdeka.kemdikbud.go.id/static/media/headline-mahasiswa.7bfc0303.webp')] min-h-80 max-h-80 lg:min-h-[70dvh] bg-cover lg:ps-40 lg:py-16 py-10 px-4 grid">
-                <h1 class="text-white text-3xl lg:text-6xl font-bold font-sans first-letter: whitespace-break-spaces leading-snug">Ambil Kendali</br>Masa Depanmu</h1>
-                <p class="text-white lg:text-xl lg:tracking-tighter max-w-[40ch] font-normal font-sans lg:-mt-0">
+            <div class="bg-[url('https://kampusmerdeka.kemdikbud.go.id/static/media/headline-mahasiswa.7bfc0303.webp')] min-h-80 max-h-80 lg:min-h-[70dvh] bg-cover lg:ps-40 lg:py-20 py-10 px-4 grid">
+                <h1 class="text-white text-3xl lg:text-7xl font-bold font-sans first-letter: whitespace-break-spaces leading-snug">Ambil Kendali</br>Masa Depanmu</h1>
+                
+                <h1 class="text-white lg:text-xl lg:tracking-tighter max-w-[50ch] font-normal font-sans lg:-mt-0">
                     Kampus Merdeka adalah cara terbaik berkuliah. Dapatkan kemerdekaan untuk membentuk masa depan yang sesuai dengan aspirasi kariermu.
-                </p>
+                </h1>
                 <div class="lg:flex lg:gap-3 lg:mt-3">
                     <div class="bg-blue-700 text-center rounded-xl lg:rounded-xl lg:px-14 lg:py-3 lg:h-fit p-2 mt-3 font-bold text-white">Telusuri Program</div>
                     <div class="bg-slate-50 text-center rounded-xl lg:rounded-xl lg:px-14 lg:py-3 lg:h-fit p-2 mt-3 font-medium">Cek Persyaratan Umum</div>
@@ -154,22 +120,87 @@
 
 
         
+    </div>
     
     <!-- Bottom Navbar for Small Screens -->
-    <nav class="flex flex-row items-center justify-center md:hidden fixed bottom-0 left-0 w-full bg-white text-black py-4">
-        <a href="#" class="mr-4">Beranda</a>
-        <a href="#" class="mr-4">Program</a>
-        <a href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us" target="_blank" class="mr-4">FAQ</a>
-        <div class="flex items-center">
-            <p class="ml-2">Masuk</p>
-        </div>
+    <nav class="flex flex-row items-center justify-between md:hidden fixed bottom-0 left-0 w-full bg-slate-100 text-black px-4">
+        <a href="#" class="flex items-center flex-col mr-4">
+            <svg class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24">
+                <path d="M10,20v-6h4v6h5v-8h3L12,3L2,12h3v8H10z"></path>
+            </svg>
+            <span>Beranda</span>
+        </a>
+
+        <a href="#" class="flex items-center mr-4 flex-col">
+            <svg class="h-6 w-6 fill-current text-gray-600 mr-1" viewBox="0 0 24 24">
+                <path d="M10 16V15H3.01L3 19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15H14V16H10ZM20 7H15.99V5L13.99 3H9.99L7.99 5V7H4C2.9 7 2 7.9 2 9V12C2 13.11 2.89 14 4 14H10V12H14V14H20C21.1 14 22 13.1 22 12V9C22 7.9 21.1 7 20 7ZM14 7H10V5H14V7Z"></path>
+            </svg>
+            <span>Program</span>
+        </a>
+
+        <a href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us" target="_blank" class="flex-col flex items-center mr-4">
+            <svg class="h-6 w-6 fill-current text-gray-600 mr-1" viewBox="0 0 41 41">
+                <path d="M20.5,38.9c-10.1,0-18.4-8.2-18.4-18.4S10.4,2.1,20.5,2.1s18.4,8.2,18.4,18.4S30.6,38.9,20.5,38.9z M20.5,5.5  c-8.3,0-15,6.7-15,15s6.7,15,15,15s15-6.7,15-15S28.8,5.5,20.5,5.5z"></path>
+                <path d="M20.4,23.9c-0.7,0-1.4-0.4-1.6-1.2c-0.3-0.9,0.2-1.8,1.1-2.1c1-0.3,3.8-1.7,3.8-3.4c0-0.8-0.3-1.5-0.8-2.1  c-0.5-0.6-1.2-1-2-1.1c-0.8-0.1-1.6,0-2.2,0.4c-0.7,0.4-1.2,1-1.4,1.8c-0.3,0.9-1.3,1.3-2.2,1c-0.9-0.3-1.3-1.3-1-2.2  c0.5-1.5,1.6-2.7,2.9-3.5c1.4-0.8,3-1.1,4.5-0.8c1.6,0.3,3,1.1,4,2.3c1,1.2,1.6,2.7,1.6,4.3c0,4.4-5.5,6.4-6.2,6.6  C20.7,23.8,20.5,23.9,20.4,23.9z"></path>
+                <path d="M20.5,30.5c-0.9,0-1.7-0.8-1.7-1.7s0.7-1.7,1.7-1.7h0c0.9,0,1.7,0.8,1.7,1.7S21.4,30.5,20.5,30.5z"></path>
+            </svg>
+            <span>FAQ</span>
+        </a>
+
+        <a href="#" class="flex items-center mr-4 flex-col">
+            <svg viewBox="0 0 24 24" height="24" fill="#A0A4A8" stroke="">
+                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"></path>
+            </svg>
+            <span>Masuk</span>
+        </a>
+
     </nav>
 
 
 
 
+    
+<!-- ini MENU mobil  -->
 
 
+
+
+    <div id="mobileMenu" class="fixed top-0 w-full bg-gray-800 text-white py-2 hidden">
+        <div class="px-6">
+            <div class="mr-4">
+                <button class="text-white hover:text-gray-300 focus:outline-none">
+                    <p class="font-bold">Kampus Mengajar</p>
+                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mr-4">
+                <button class="text-white hover:text-gray-300 focus:outline-none">
+                    <p class="font-bold">Magang MSIB</p>
+                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mr-4">
+                <button class="text-white hover:text-gray-300 focus:outline-none">
+                    <p class="font-bold">Studi Independen Bersertifikat</p>
+                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mr-4">
+                <button class="text-white hover:text-gray-300 focus:outline-none">
+                    <p class="font-bold">Pertukaran Mahasiswa Merdeka</p>
+                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
 
 
