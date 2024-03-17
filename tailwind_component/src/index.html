@@ -121,6 +121,8 @@
 
         
     </div>
+
+    
     
     <!-- Bottom Navbar for Small Screens -->
     <nav class="flex flex-row items-center justify-between md:hidden fixed bottom-0 left-0 w-full bg-slate-100 text-black px-4">
@@ -163,54 +165,111 @@
 <!-- ini MENU mobil  -->
 
 
+<div id="mobileMenu" class="flex-row hidden fixed top-0 left-0 w-full text-black h-full bg-black bg-opacity-60">
+
+    <div  class="bg-slate-100 w-full h-3/5">
+        <div class="px-6 relative w-full">
 
 
-    <div id="mobileMenu" class="fixed top-0 w-full bg-gray-800 text-white py-2 hidden">
-        <div class="px-6">
-            <div class="mr-4">
-                <button class="text-white hover:text-gray-300 focus:outline-none">
-                    <p class="font-bold">Kampus Mengajar</p>
-                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
+            <div class=" flex">
+                
+                
+                <button id="closeMenu" href="#" class="flex mr-4 py-3 right-0 w-full b justify-end">
+                    
+                    <svg class="w-6 h-6 text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
                     </svg>
+
+                </button>
+                
+            </div>
+
+            <div>
+                <button href="#" class="mr-4 py-3">
+                    <p class="text-gray-400 text-xs" >Program Kampus Merdeka</p>
                 </button>
             </div>
-            <div class="mr-4">
-                <button class="text-white hover:text-gray-300 focus:outline-none">
-                    <p class="font-bold">Magang MSIB</p>
-                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
+
+            <div class=" flex">
+                
+                <p class="flex-shrink-0 py-3">Kampus Mengajar</p>
+                <button href="#" class="flex mr-4 py-3 right-0 w-full justify-end">
+                    
+                    <svg viewBox="0 0 24 24" height="20" fill="#45474A" stroke=""><path d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z"></path></svg>
+                </button>
+                
+            </div>
+
+            <div class=" flex">
+                
+                <p class="flex-shrink-0 py-3">Magang MSIB</p>
+                <button href="#" class="flex mr-4 py-3 right-0 w-full justify-end">
+                    
+                    <svg viewBox="0 0 24 24" height="20" fill="#45474A" stroke=""><path d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z"></path></svg>
+                </button>
+                
+            </div>
+
+            <div class=" flex">
+                
+                <p class="flex-shrink-0 py-3">Studi Independen Bersertifikat</p>
+                <button href="#" class="flex mr-4 py-3 right-0 w-full justify-end">
+                    
+                    <svg viewBox="0 0 24 24" height="20" fill="#45474A" stroke=""><path d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z"></path></svg>
+                </button>
+                
+            </div>
+
+            <div class=" flex">
+                
+                <p class="flex-shrink-0 py-3">Pertukaran Mahasiswa Merdeka</p>
+                <button href="#" class="flex mr-4 py-3 right-0 w-full justify-end">
+                    
+                    <svg viewBox="0 0 24 24" height="20" fill="#45474A" stroke=""><path d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z"></path></svg>
+                </button>
+                
+            </div>
+
+            <div class=" flex">
+                
+                <p class="flex-shrink-0 py-3">Program dan Kegiatan Lainnya</p>
+                <button href="#" class="flex mr-4 py-3 right-0 w-full justify-end">
+                    
+                    <svg viewBox="0 0 24 24" height="20" fill="#45474A" stroke=""><path d="M13,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l4.3-4.3H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h11.6l-4.3-4.3  c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.1,0.1,0.2,0.2,0.2,0.3c0,0.1,0.1,0.2,0.1,0.4l0,0c0,0,0,0,0,0l0,0c0,0.1,0,0.3-0.1,0.4  c0,0.1-0.1,0.2-0.2,0.3l-6,6C13.5,18.9,13.3,19,13,19z"></path></svg>
+                </button>
+                
+            </div>
+
+            <div>
+                <button href="" class="flex mr-4">
+
                 </button>
             </div>
-            <div class="mr-4">
-                <button class="text-white hover:text-gray-300 focus:outline-none">
-                    <p class="font-bold">Studi Independen Bersertifikat</p>
-                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="mr-4">
-                <button class="text-white hover:text-gray-300 focus:outline-none">
-                    <p class="font-bold">Pertukaran Mahasiswa Merdeka</p>
-                    <svg class="w-6 h-6 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"></path>
-                    </svg>
-                </button>
-            </div>
+
+
+            
+
+
         </div>
     </div>
+
+</div>
 
 
 
     <script>
         const menuButton = document.getElementById('menuButton');
         const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
     
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        }); 
+        
     </script>
 
 
