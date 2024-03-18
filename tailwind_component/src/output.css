@@ -548,6 +548,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -776,10 +780,6 @@ video {
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
-}
-
 .bg-\[url\(\'https\:\/\/kampusmerdeka\.kemdikbud\.go\.id\/static\/media\/headline-mahasiswa\.7bfc0303\.webp\'\)\] {
   background-image: url('https://kampusmerdeka.kemdikbud.go.id/static/media/headline-mahasiswa.7bfc0303.webp');
 }
@@ -911,6 +911,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .hover\:text-gray-300:hover {
