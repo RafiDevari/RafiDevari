@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="./src/test.css">
 </head>
 <body>
-
+    
+    <!-- ini navbar  -->
     <header class="bg-black text-white flex items-center justify-between lg:px-40 py-5 md:flex-row md:items-center">
         
         
-        <div class="flex items-center">
+        <div class="flex items-center px-4">
             <div class="clickable">
                 <img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-pendidikan.92aef756.webp" alt="Logo Pendidikan" class="h-10">
             </div>
@@ -20,7 +21,8 @@
                 <img src="https://kampusmerdeka.kemdikbud.go.id/static/media/logo-white.d216d864.webp" alt="MBKM logo" class="h-10">
             </div>
         </div>
-        <!-- Menu Button for Mobile -->
+
+        <!-- Menu Tombol Mobile -->
         <button id="menuButton" class="md:hidden block text-white hover:text-gray-300 focus:outline-none px-8">
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -28,8 +30,8 @@
         </button>
     
         <nav class="hidden md:flex flex-col md:flex-row md:items-center md:ml-auto px-6">
-            <a href="#" class="px-6"><b>Beranda</b></a>
-            <a href="#" class="px-6"><b>Program</b></a> 
+            <button onclick="berandas()" class="px-6"><b>Beranda</b></button>
+            <button onclick="programs()" class="px-6"><b>Program</b></button> 
             <a href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us" target="_blank" class="px-6"><b>Butuh Bantuan?</b></a>
             
             <div style="border-radius: 50px;" class="flex items-center mt-4 md:mt-0 bg-white ">
@@ -47,7 +49,7 @@
 
 
 
-    <!-- PC CONTENT -->
+    <!-- laptop content -->
     <div class="bg-white text-black py-2 hidden md:flex items-center justify-center">
         <div class="flex flex-wrap justify-between px-6">
 
@@ -103,10 +105,10 @@
 
 
 
-    
+    <!-- ini beranda -->
 
 
-<div id="beranda" style="display: none;">
+<div id="beranda" class="hidden">
 
     
         <div>
@@ -216,7 +218,7 @@
 
 
 
-
+<!-- ini program  -->
     <div id="program" class="bg-gray-50 text-black py-2  flex flex-col items-center justify-center">
                 <div class="w-3/4 py-2">
                     <h1>&nbsp;</h1><h1>&nbsp;</h1><b class="text-4xl">Program Kampus Merdeka</b>
@@ -492,6 +494,8 @@
 
 
 
+<!-- ini footer -->
+
     <footer class="bg-black text-white py-12 hidden md:flex flex-col items-center justify-center">
         <div class="w-3/4 flex flex-col items-center ">
             <div class="wrapper w-full md:w-full py-6">
@@ -557,42 +561,42 @@
 
 
 
-    <!-- ini footer -->
+    
 
 
 
     
     <!-- Bottom Navbar for Small Screens -->
     <nav class="flex flex-row items-center justify-between md:hidden fixed bottom-0 left-0 w-full bg-slate-100 text-black px-4">
-        <a href="#" class="flex items-center flex-col mr-4">
-            <svg class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24">
+        <button onclick="berandas()" class="flex items-center flex-col mr-4">
+            <svg id="berandac" class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24">
                 <path d="M10,20v-6h4v6h5v-8h3L12,3L2,12h3v8H10z"></path>
             </svg>
             <span>Beranda</span>
-        </a>
+        </button>
 
-        <a href="#" class="flex items-center mr-4 flex-col">
-            <svg class="h-6 w-6 fill-current text-gray-600 mr-1" viewBox="0 0 24 24">
+        <button onclick="programs()" class="flex items-center mr-4 flex-col">
+            <svg id="programc" class="h-6 w-6 fill-current text-red-400 text-gray-600 mr-1" viewBox="0 0 24 24">
                 <path d="M10 16V15H3.01L3 19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V15H14V16H10ZM20 7H15.99V5L13.99 3H9.99L7.99 5V7H4C2.9 7 2 7.9 2 9V12C2 13.11 2.89 14 4 14H10V12H14V14H20C21.1 14 22 13.1 22 12V9C22 7.9 21.1 7 20 7ZM14 7H10V5H14V7Z"></path>
             </svg>
             <span>Program</span>
-        </a>
+        </button>
 
-        <a href="https://pusatinformasi.kampusmerdeka.kemdikbud.go.id/hc/en-us" target="_blank" class="flex-col flex items-center mr-4">
+        <button class="flex-col flex items-center mr-4">
             <svg class="h-6 w-6 fill-current text-gray-600 mr-1" viewBox="0 0 41 41">
                 <path d="M20.5,38.9c-10.1,0-18.4-8.2-18.4-18.4S10.4,2.1,20.5,2.1s18.4,8.2,18.4,18.4S30.6,38.9,20.5,38.9z M20.5,5.5  c-8.3,0-15,6.7-15,15s6.7,15,15,15s15-6.7,15-15S28.8,5.5,20.5,5.5z"></path>
                 <path d="M20.4,23.9c-0.7,0-1.4-0.4-1.6-1.2c-0.3-0.9,0.2-1.8,1.1-2.1c1-0.3,3.8-1.7,3.8-3.4c0-0.8-0.3-1.5-0.8-2.1  c-0.5-0.6-1.2-1-2-1.1c-0.8-0.1-1.6,0-2.2,0.4c-0.7,0.4-1.2,1-1.4,1.8c-0.3,0.9-1.3,1.3-2.2,1c-0.9-0.3-1.3-1.3-1-2.2  c0.5-1.5,1.6-2.7,2.9-3.5c1.4-0.8,3-1.1,4.5-0.8c1.6,0.3,3,1.1,4,2.3c1,1.2,1.6,2.7,1.6,4.3c0,4.4-5.5,6.4-6.2,6.6  C20.7,23.8,20.5,23.9,20.4,23.9z"></path>
                 <path d="M20.5,30.5c-0.9,0-1.7-0.8-1.7-1.7s0.7-1.7,1.7-1.7h0c0.9,0,1.7,0.8,1.7,1.7S21.4,30.5,20.5,30.5z"></path>
             </svg>
             <span>FAQ</span>
-        </a>
+        </button>
 
-        <a href="#" class="flex items-center mr-4 flex-col">
+        <button class="flex items-center mr-4 flex-col">
             <svg viewBox="0 0 24 24" height="24" fill="#A0A4A8" stroke="">
                 <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"></path>
             </svg>
             <span>Masuk</span>
-        </a>
+        </button>
 
     </nav>
 
@@ -707,6 +711,10 @@
         const menuButton = document.getElementById('menuButton');
         const mobileMenu = document.getElementById('mobileMenu');
         const closeMenu = document.getElementById('closeMenu');
+        const beranda = document.getElementById('beranda');
+        const program = document.getElementById('program');
+        const berandac = document.getElementById('berandac');
+        const programc = document.getElementById('programc');
     
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
@@ -717,6 +725,21 @@
             mobileMenu.classList.toggle('hidden');
             mobileMenu.classList.remove('apa');
         }); 
+
+
+        function berandas() {
+            program.classList.add('hidden');
+            beranda.classList.remove('hidden');
+            berandac.classList.add('text-red-400');
+            programc.classList.remove('text-red-400');
+        }
+
+        function programs() {
+            program.classList.remove('hidden');
+            beranda.classList.add('hidden');
+            berandac.classList.remove('text-red-400');
+            programc.classList.add('text-red-400');
+        }
         
     </script>
 
