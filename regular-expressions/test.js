@@ -54,7 +54,7 @@ var usernamei = document.getElementById('usernamei');
 var usernamek = document.getElementById('usernamek');
 username.addEventListener('input', function(){
     var value = usernamei.value;
-    var regeks = /^[a-zA-Z0-9]{5,}$/;
+    var regeks = /^[a-z0-9]{5,}$/;
     if(regeks.test(value)){
         usernamek.classList.add('hidden');
         username.classList.remove('border-red-500');
@@ -63,5 +63,23 @@ username.addEventListener('input', function(){
         usernamek.classList.remove('hidden');
         username.classList.remove('border-green-500');
         username.classList.add('border-red-500');
+    }
+});
+
+
+var nama = document.getElementById('nama');
+var namai = document.getElementById('namai');
+var namak = document.getElementById('namak');
+nama.addEventListener('input', function(){
+    var value = namai.value;
+    var regeks = /^[a-zA-Z]{1,}$/;
+    if(regeks.test(value)){
+        namak.classList.add('hidden');
+        nama.classList.remove('border-red-500');
+        nama.classList.add('border-green-500');
+    }else{
+        namak.classList.remove('hidden');
+        nama.classList.remove('border-green-500');
+        nama.classList.add('border-red-500');
     }
 });
