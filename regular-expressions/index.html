@@ -34,20 +34,20 @@
                     Pre-Registration
                 </div>
 
-                <div class="p-4 mb-4 bg-gray-300 border ">
-                    <input class="bg-gray-300 w-11/12" type="text" placeholder="Enter Email">
+                <div id="email" class="p-4 mb-4 bg-gray-300 border ">
+                    <input id="emaili" class="bg-gray-300 w-11/12" type="text" placeholder="Enter Email">
                 </div>
 
-                <div class="p-4 bg-gray-300 mb-4 border ">
+                <div id="nim" class="p-4 bg-gray-300 mb-4 border ">
                     <input class="bg-gray-300 w-11/12" type="text" placeholder="Enter NIM">
                     
                 </div>
             
-                <div class="p-4 bg-gray-300 mb-4 border ">
+                <div id="username" class="p-4 bg-gray-300 mb-4 border ">
                     <input class="bg-gray-300 w-11/12" type="text" placeholder="Enter Username">
                 </div>
 
-                <div class="p-4 bg-gray-300 mb-4 border ">
+                <div id="npw" class="p-4 bg-gray-300 mb-4 border ">
                     <input class="bg-gray-300 w-11/12" type="text" placeholder="Enter New Password">
                 </div>
 
@@ -64,17 +64,8 @@
 
     </div>
 
-    <script>
-        var rafi = document.getElementById('rafi');
-        rafi.addEventListener('input', function(){
-            var value = rafi.value;
-            var regeks = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-            if(regeks.test(value)){
-                rafi.style.border = '2px solid green';
-            }else{
-                rafi.style.border = '2px solid red';
-            }
-        });
+    <script src="test.js">
+        
     </script>
 </body>
 </html>
