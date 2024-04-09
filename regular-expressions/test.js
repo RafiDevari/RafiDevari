@@ -3,6 +3,8 @@ var button = document.getElementById('submit');
 var email = document.getElementById('email');
 var emaili = document.getElementById('emaili');
 var emailk = document.getElementById('emailk');
+
+
 email.addEventListener('input', function(){
     var valuea = emaili.value;
     var regeks = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$/;
@@ -87,6 +89,3 @@ nama.addEventListener('input', function(){
 });
 
 
-button.addEventListener('input', function(){
-
-});
