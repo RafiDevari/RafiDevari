@@ -6,6 +6,8 @@ var emailk = document.getElementById('emailk');
 
 
 email.addEventListener('input', function(){
+
+
     var valuea = emaili.value;
     var regeks = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$/;
     if(regeks.test(valuea)){
@@ -17,6 +19,8 @@ email.addEventListener('input', function(){
         email.classList.remove('border-green-500');
         email.classList.add('border-red-500');
     }
+
+    
 });
 
 var npw = document.getElementById('npw');
@@ -41,7 +45,7 @@ var nimi = document.getElementById('nimi');
 var nimk = document.getElementById('nimk');
 nim.addEventListener('input', function(){
     var valuec = nimi.value;
-    var regeks = /^[0-9]{9}$/;
+    var regeks = /^[0-9]{9,}$/;
     if(regeks.test(valuec)){
         nimk.classList.add('hidden');
         nim.classList.remove('border-red-500');
