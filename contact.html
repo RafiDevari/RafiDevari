@@ -17,6 +17,16 @@
             transform: translateX(0);
           }
         }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
       </style>
 </head>
 <body class="bg-black/95">
@@ -61,7 +71,7 @@
             <div class="mx-8 my-5 lg:my-20">
 
                 <!-- Header -->
-                <div class="mb-14 text-center lg:text-start">
+                <div class="mb-14 text-center lg:text-start" style="opacity: 0; animation: fadeInUp 750ms ease-in-out forwards;">
                     <h1 class="text-2xl ">My Contacts</h1>
                 </div>
             
